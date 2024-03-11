@@ -35,7 +35,12 @@
             }
             
             .container {
+                width: 100%;
+                
+            }
+            .container > #left {
                 width: 60%;
+                float: left;
             }
             .card {
                 width: 100%;
@@ -81,6 +86,25 @@
                 padding: 2px 7px ;
             }
             
+            .container > #right {
+                width: 35%;
+                float: right;
+            }
+            
+            .card-small {
+                width: 100%;
+                margin:  16px 0px;
+                line-height: 1;
+                box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+            }
+            .card-small > .text {
+                width: 100%;
+                padding: 5px 16px;
+            }
+            .card-small > .text > p {
+                line-height: 1.5;
+            }
+            
         </style>
     </head>
     <body>
@@ -110,7 +134,40 @@
                         </p>
                     </section>
                 </article>
+                <article class="card">
+                    <img src="https://www.w3schools.com/w3images/bridge.jpg" alt="bridge" />
+                    <section class="upper">
+                        <h3>BLOG ENTRY</h3>
+                        <h4>Title description, <span>Novermber 19, 2020</span></h4>
+                        <p>
+                            Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl.
+                            Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim,
+                            ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper.
+                            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+                            porta lectus vitae, ultricies congue gravida diam non fringilla.
+                        </p>
+                    </section>
+                    <section class="lower">
+                        <button type="button">READ MORE »</button>
+                        <p>
+                            <b>Comments <span>4</span></b>
+                        </p>
+                    </section>
+                </article>
             </div>
+            <aside id="right">
+                <article class="card-small">
+                    <img src="https://www.w3schools.com/w3images/bridge.jpg" alt="bridge" />
+                    <section class="text">
+                        <h3>My Name</h3>
+                        <p>
+                            Just me, myself and I, exploring the universe of uknownment.
+                            I have a heart of love and a interest of lorem ipsum and mauris neque quam blog.
+                            I want to share my world with you.
+                        </p>
+                    </section>
+                </article>
+            </aside>
         </main>
     </body>
 </html>
