@@ -15,6 +15,9 @@
             h1, h2, h3, h4, h5 {
                 font-weight: 500;
             }
+            a {
+                text-decoration: none;
+            }
             #header {
                 width: 100%;
                 display: inline-block;
@@ -97,14 +100,31 @@
                 line-height: 1;
                 box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
             }
+            .card-small > h4 {
+                vertical-align: center;
+                padding: 26px 16px;
+                margin: 0;
+            }
+            .card-small > .links {
+                padding: 0;
+                margin: 0;
+            }
             .card-small > .text {
                 width: 100%;
-                padding: 5px 16px;
+                padding: 0 16px;
             }
             .card-small > .text > p {
                 line-height: 1.5;
             }
-            
+            .card-small > .links > a {
+                width: 100%;
+                display: flex;
+                padding: 8px 15px;
+            }
+            .card-small > .links > a > section {
+                padding: 0;
+                margin: 0 0 0 16px;
+            }
         </style>
     </head>
     <body>
@@ -157,7 +177,7 @@
             </div>
             <aside id="right">
                 <article class="card-small">
-                    <img src="https://www.w3schools.com/w3images/bridge.jpg" alt="bridge" />
+                    <img src="https://www.w3schools.com/w3images/avatar_g.jpg" alt="avatar_g" />
                     <section class="text">
                         <h3>My Name</h3>
                         <p>
@@ -165,6 +185,42 @@
                             I have a heart of love and a interest of lorem ipsum and mauris neque quam blog.
                             I want to share my world with you.
                         </p>
+                    </section>
+                </article>
+                <article class="card-small">
+                    <h4>Popular Posts</h4>
+                    <section class="links">
+                        <a href="#">
+                            <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="workshop" style="width: 80px; height: 80px; float: left;" />
+                            <section>
+                                <h4>Lorem</h4>
+                                <p>Sed mattis nunc</p>
+                            </section>
+                        </a>
+                        <hr style="border: 0.1px solid lightgrey;">
+                        <a href="#">
+                            <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="gondol" style="width: 80px; height: 80px; float: left;" />
+                            <section>
+                                <h4>Ipsum</h4>
+                                <p>Praes tinci sed</p>
+                            </section>
+                        </a>
+                        <hr style="border: 0.1px solid lightgrey;">
+                        <a href="#">
+                            <img src="https://www.w3schools.com/w3images/skies.jpg" alt="skies" style="width: 80px; height: 80px; float: left;" />
+                            <section>
+                                <h4>Dorum</h4>
+                                <p>Ultricies congue</p>
+                            </section>
+                        </a>
+                        <hr style="border: 0.1px solid lightgrey;">
+                        <a href="#">
+                            <img src="https://www.w3schools.com/w3images/rock.jpg" alt="rock" style="width: 80px; height: 80px; float: left;" />
+                            <section>
+                                <h4>Mingsum</h4>
+                                <p>Lorem ipsum dipsum</p>
+                            </section>
+                        </a>
                     </section>
                 </article>
             </aside>
