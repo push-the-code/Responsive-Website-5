@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <style type="text/css" media="all">
+            * {
+                border: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Raleway", sans-serif;
+            }
+            img {
+                width: 100%;
+            }
+            h1, h2, h3, h4, h5 {
+                font-weight: 500;
+            }
+            #header {
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+                padding: 22px 0;
+            }
+            #header > h1 {
+                font-family: "Raleway", sans-serif;
+                font-weight: 500;
+            }
+            #header > p {
+                font-family: "Raleway", sans-serif;
+            }
+            #header > p > span {
+                background: #000000;
+                color: #ffffff;
+                padding: 0 10px;
+            }
+            
+            .container {
+                width: 60%;
+            }
+            .card {
+                width: 100%;
+                display: inline-block;
+                margin: 16px;
+                line-height: 1;
+                box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+            }
+            .card > .upper {
+                width: 100%;
+                padding: 5px 16px;
+            }
+            .card > .upper > p {
+                text-align: justify;
+                line-height: 1.5;
+            }
+            .card >  .upper > h4 > span {
+                opacity: 0.6;
+                font-size: 13px;
+            }
+            
+            .card > .lower {
+                width: 100%;
+                height: fit-content;
+                display: block;
+                padding: 0 16px 56px 16px;
+            }
+            .card > .lower > button {
+                border: 1px solid #a9a9a9;
+                padding: 12px 24px;
+                float: left;
+            }
+            .card > .lower > button:hover {
+                background: #a9a9a9;
+                cursor: pointer;
+            }
+            .card > .lower > p {
+                float: right;
+            }
+            .card > .lower > p > b > span {
+                background: #000000;
+                color: #ffffff;
+                padding: 2px 7px ;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <h1>MY BLOG</h1>
+            <p>Welcome to the blog of <span>Pushkar</span></p>
+        </header>
+        <main class="container">
+            <div id="left">
+                <article class="card">
+                    <img src="https://www.w3schools.com/w3images/woods.jpg" alt="woods" />
+                    <section class="upper">
+                        <h3>Title Heading</h3>
+                        <h4>Title Description, <span>March 3, 2010</span></h4>
+                        <p>
+                            Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl.
+                            Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim,
+                            ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper.
+                            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+                            porta lectus vitae, ultricies congue gravida diam non fringilla.
+                        </p>
+                    </section>
+                    <section class="lower">
+                        <button type="button">READ MORE »</button>
+                        <p>
+                            <b>Comments <span>0</span></b>
+                        </p>
+                    </section>
+                </article>
+            </div>
+        </main>
+    </body>
+</html>
