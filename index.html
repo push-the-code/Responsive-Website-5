@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <style type="text/css" media="all">
             * {
@@ -199,6 +200,37 @@
             }
             #footer > p {
                 margin: 16px;
+            }
+            
+            @media only screen and (max-width: 770px) {
+                body {
+                    margin: 0;
+                    padding: 0;
+                }
+                .container {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                .container > #left {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    float: none;
+                    margin: 0;
+                    padding: 16px;
+                }
+                .container > #left > .card {
+                    margin: 16px 0 36px 0;
+                }
+                .container > #right {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    float: none;
+                    margin: 0;
+                    padding: 16px;
+                }
             }
         </style>
     </head>
